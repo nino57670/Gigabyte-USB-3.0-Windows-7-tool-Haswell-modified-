@@ -1,0 +1,118 @@
+############################Release Notes#################################
+
+ Copyright (c) 2009-2018 AMD, ASMedia, MCCI.
+
+ MCCI(R) is a registered trademark of MCCI Corporation.
+
+
+LIMITATION OF LIABILITY:  THE MATERIALS ARE PROVIDED AS IS WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTY OF ANY KIND INCLUDING WARRANTIES OF MERCHANTABILITY, 
+NONINFRINGEMENT OF THIRD-PARTY INTELLECTUAL PROPERTY, OR FITNESS FOR ANY PARTICULAR
+PURPOSE. IN NO EVENT SHALL AMD OR ITS SUPPLIERS BE LIABLE FOR ANY DAMAGES 
+WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS
+INTERRUPTION, LOSS OF INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE
+THE MATERIALS, EVEN IF AMD HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR LIMITATION OF LIABILITY FOR
+CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+AMD does not assume any responsibility for any errors which may appear in the 
+Materials nor any responsibility to support or update the Materials.  AMD
+retains the right to make changes to its test specifications at any time, 
+without notice.  NO SUPPORT OBLIGATION: AMD is not obligated to furnish, support, 
+or make any further information, software, technical information, know-how, or 
+show-how available to you.
+U.S. GOVERNMENT RESTRICTED RIGHTS: The Materials and documentation are provided 
+with RESTRICTED RIGHTS.  Use, duplication or disclosure by the Government is 
+subject to restrictions as set forth in FAR52.227014 and DFAR252.227-7013, et
+seq., or its successor.  Use of the Materials by the Government constitutes
+acknowledgment of AMD’s proprietary rights in them.
+
+
+===========================================================================
+
+            AMD USB 3.1 drivers for Promontory
+                         Version 1.0.5.1
+                      Release date 01/04/2018
+
+ Contents
+
+  1  Introduction
+  2  System Requirements
+  3  Supported Operating Systems
+  4  Included Files
+  5  Installing And Uninstalling Instructions For The Driver
+  6  Troubleshooting
+  7  Revision History
+
+===========================================================================
+
+
+1. Introduction
+===============
+
+The driver package includes drivers for AMD USB 3.1 xHC host controller and hubs
+that attach to the host controller. The drivers are for Promontory.
+
+
+2. System Requirements
+======================
+
+Ensure that you are using a supported operating system and have the required files.
+
+
+3. Supported Operating Systems
+==============================
+
+Win7, 32-bit and 64-bit.
+
+
+4. Included Files
+=================
+
+amdxhc31.inf      Installation script for xHC host controller
+amdxhc31.cat      Signature file
+amdhub31.inf      Installation script for attached hub devices
+amdhub31.cat      Signature file
+x86\amdxhc31.sys  32-bit driver file for xHC host controller
+x86\amdhub31.sys  32-bit driver file for attached hub devices
+x64\amdxhc31.sys  64-bit driver file for xHC host controller
+x64\amdhub31.sys  64-bit driver file for attached hub devices
+
+
+5. Installing And Uninstalling Instructions For The Driver
+==========================================================
+
+To install, in Windows Device Manager, right click target device and select
+"Install Driver..." or "Update Driver...".
+
+To uninstall, in Windows Device Manager, right click target device and select
+"Uninstall".
+
+
+6. Troubleshooting
+==================
+
+If you encounter any problems, uninstall the driver and reboot the computer.
+
+
+7. Revision History
+===================
+
+Version 1.0.5.1 (01/04/2018)
+
+    LP PT Device ID Added.
+
+Version 1.0.3.0 (04/07/2017)
+
+    Modify USB 3.1 capability checking.
+
+Version 1.0.2.0 (02/26/2016)
+
+    Remove REV_xx in the inf file.
+
+Version 1.0.1.0 (11/13/2015)
+
+    Update hub ID string.
+    
+Version 1.0.0.0 (10/15/2015)
+
+    First version.

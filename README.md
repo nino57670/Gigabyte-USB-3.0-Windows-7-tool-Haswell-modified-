@@ -46,4 +46,4 @@ The **"Haswell+" modification** extends support to both **Intel Haswell and newe
 
 ## Credits  
 - Original tool: **Gigabyte**  
-- Modification: **me**  
+- Modification: **[Nino](https://github.com/nino57670)**  
